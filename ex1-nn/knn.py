@@ -32,6 +32,7 @@ def predict(testInst,model,k):
     return majority_vote(neighbor_labels)
 
 def majority_vote(labels):
+    #### optional: extend it to break ties randomly
     return Counter(labels).most_common()[0][0] # get label of most frequent element
 
 def computeDistance(inst1,inst2,d):
