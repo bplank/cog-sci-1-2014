@@ -11,6 +11,7 @@ def train(X,y,iterations,alpha=1.0):
     for iter in range(iterations):
         print "Iteration: ", (iter+1)
         for n in range(X.shape[0]) :
+            print model
             # retrieve data point and add bias feature value
             d = np.append(X[n], [-1])
             # get dot product
